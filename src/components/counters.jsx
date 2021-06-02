@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 import Counter from "./counter";
 
 class Counters extends Component {
@@ -21,8 +22,13 @@ class Counters extends Component {
           Reset
         </button>
         <button onClick={onCompute} className="btn btn-primary btn-sm m-2">
-          Compute
+          link to permutations will go here
         </button>
+        <a href="https://black-copilot-315217.oa.r.appspot.com/">
+          Visit Wonder_Wave on Google Cloud
+        </a>
+        
+
         <p></p>
         <button onClick={onCreate} className="btn btn-primary btn-sm m-2">
           Create
@@ -36,7 +42,6 @@ class Counters extends Component {
             counter={counter}
             display={display}
             tet_dir={tet_dir}
-         
           />
         ))}
       </div>
